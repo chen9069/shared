@@ -7,7 +7,7 @@ public class FenwickTree {
     public void updateBinaryIndexedTree(int binaryIndexedTree[], int val, int index){
         while(index < binaryIndexedTree.length){
             binaryIndexedTree[index] += val;
-	    count ++;
+	    this.count ++;
             index = getNext(index);
         }
     }
