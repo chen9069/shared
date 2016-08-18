@@ -71,10 +71,8 @@ public class FenwickTree {
 		input[i] = random.nextInt(16) - 8;
 	}
         FenwickTree ft = new FenwickTree();
-	long start = System.currentTimeMillis();
-        ft.createTree(input, bit);
-	long duration = System.currentTimeMillis() - start;
 //	System.out.println(Arrays.toString(input));
+	System.out.println("First Constructor");
 	System.out.println(String.format("Count: %d", ft.count));
 //	System.out.println(Arrays.toString(bit));
 	System.out.println(String.format("Scale: %f", ((double) ft.count) / ((double) size))); 
@@ -86,6 +84,7 @@ public class FenwickTree {
 	}
 	/*********************************/
 //	System.out.println(Arrays.toString(bit2));
+	System.out.println("Second Constructor");
 	System.out.println(String.format("Count: %d", ft.count));
 	System.out.println(String.format("Scale: %f", ((double) ft.count) / ((double) size)));
     }
