@@ -68,9 +68,10 @@ public class FenwickTree {
 	int bit[] = new int[size+1];
 	int bit2[] = new int[size+1];
 	for (int i = 0; i < input.length; i ++) {
-		input[i] = random.nextInt(16) - 8;
+	    input[i] = random.nextInt(16) - 8;
 	}
         FenwickTree ft = new FenwickTree();
+        ft.createTree(input, bit);
 //	System.out.println(Arrays.toString(input));
 	System.out.println("First Constructor");
 	System.out.println(String.format("Count: %d", ft.count));
